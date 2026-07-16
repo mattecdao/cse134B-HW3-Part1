@@ -1,0 +1,126 @@
+@import "test.css";
+
+:root{
+    --main-color:dimgray;
+    --different-color:darkslategray;
+    --main-font-family: Roboto, "Times New Roman", Arial, sans-serif;
+    --main-padding: 6rem;
+}
+
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+
+header{
+        background-color:lavenderblush;
+        padding:var(--main-padding);
+        line-height:150%;
+        border-width: 0.15rem;
+        border-style: dotted;
+        border-color: var(--different-color);
+        p{
+            color:black;
+            font-size:1.2rem;
+            padding: 0.5rem;
+        }
+}
+
+h1, h2{
+    font-family: "Times New Roman", Arial;
+    font-size: 2rem;
+    color:var(--different-color);
+    line-height:200%;
+}
+
+body{
+    font-family:var(--main-font-family);
+    color:var(--main-color);
+    line-height:150%;
+    padding:var(--main-padding);
+    article{
+        p{
+            margin:2rem;
+            font-size:1.2rem
+        }
+    }
+    dl{
+        font-size:1.2rem;
+        dt{
+            font-weight:bold;
+            border-left-width: 0.175rem;
+            border-left-style: solid;
+            border-left-color: var(--different-color);
+        }
+        dt::before{
+            content:"\1F9C0";
+        }
+        dd{
+            margin:2rem;
+        }
+    }
+}
+
+[lang = "it"]{
+    font-family: var(--main-font-family);
+    font-style:bold, italic;
+    color:black;
+}
+.latin{
+    font-family: Helvetica, var(--main-font-family);
+    font-style:italic;
+    color:black;
+    margin:0.5rem;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: var(--different-color);
+}
+#warning{
+    font-style:bold, italic;
+    font-size:1.2rem;
+    color:var(--different-color);
+    background-color:lightcoral;
+    border-width: 0.15rem;
+    border-style: solid;
+    border-color: var(--different-color);
+    padding:0.75rem;
+    margin:1rem;
+    
+}
+blockquote{
+    font-style:italic;
+    color:var(--different-color);
+    background-color:navajowhite;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: var(--different-color);
+    padding:0.5rem;
+    margin:1rem;
+    #blockquote-footer{
+        text-align:left;
+        font-style:normal;
+        background-color:navajowhite;
+        padding:0.5em;
+        text-decoration:underline;
+    }
+}
+
+a:hover
+{
+    background-color:yellow;
+    border-width: 0.1rem;
+    border-style: solid;
+}
+
+a:focus, button:focus, input:focus{
+    background-color:mediumspringgreen;
+}
+
+[type = "checkbox"]:checked + label{
+    background-color:yellow;
+    color:black;
+}
+footer{
+    text-align:center;
+    padding:2rem;
+}
