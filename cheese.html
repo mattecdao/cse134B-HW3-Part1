@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cheese</title>
+        <link rel = "stylesheet" href = "cheese.css" />
+    </head>
+    <body>
+        <header>
+            <h1>A Short Guide to Cheese</h1>
+
+            <p>by The CSE Cheese Society. Last updated <time datetime="2026-01">January 2026</time>.</p>
+            <p>Cheese is one of humanity's oldest prepared foods. People have made it
+                for at least 7,000 years, long before written history. At its core,
+                cheese is simple: milk, salt, cultures, and rennet. Time and technique
+                do the rest.</p>
+        </header>
+
+        <main>
+        <article>
+            <h2>What Is Cheese, Really?</h2>
+
+            <p>Cheese begins when milk separates into curds and whey. The curds are
+            pressed, salted, and aged. Every variable matters: the animal, the
+            season, the cave, the patience of the maker. Change one and you get a
+            different cheese. This is why a single recipe has produced thousands
+            of distinct varieties.</p>
+
+            <p>The word <q>cheese</q> comes from the Latin <span class ="latin">caseus</span>, which also gives us the
+            word <q>casein,</q> the main milk protein.</p>
+            <section>
+                <h2>Famous Families of Cheese</h2>
+                <dl>
+                    <dt>Fresh</dt>
+                    <dd>Fresh cheeses are young and mild. They include <span lang = "it">mozzarella, ricotta</span>,
+                    and chevre. Eat these within days.</dd>
+                    <dt>Soft-ripened</dt>
+                    <dd>Soft-ripened cheeses grow a white bloomy rind. Brie and Camembert are
+                    the classic examples. The rind is edible and you should eat it.</dd>
+                    <dt>Blue</dt>
+                    <dd>Blue cheeses are veined with <span class = "latin">Penicillium roqueforti</span>. Roquefort,
+                    <span lang = "it">Gorgonzola</span>, and Stilton lead this family. They are salty, sharp, and
+                    divisive.</dd>
+                    <dt>Hard</dt>
+                    <dd>Hard cheeses are aged for months or years. <span lang = "it" style = "color:red">Parmigiano-Reggiano</span>,
+                    aged Gouda, and Comte reward the wait with crystals of crunch and
+                    deep, nutty flavor.</dd>
+                    <!--This <span style="color:red"> tag overrides the lang attribute as, during render-time, 
+                        inline styles are highest priority -->
+                </dl>
+            </section>
+            </article>
+            <section>
+                <h2>A Word of Caution</h2>
+                <p id = "warning">Warning: The American product known as <q>processed cheese food</q> is,
+                at best, distantly related to cheese. Read the label.</p>
+                <blockquote>
+                    <p>Cheese is milk's leap toward immortality.</p>
+                    <footer id = "blockquote-footer">— attributed to Clifton Fadiman</footer>
+                </blockquote>
+            </section>
+            <section>
+                <h2>Try It Yourself</h2>
+                <form>
+                    <fieldset>
+                        <legend>Which of these have you tasted?</legend>
+                        <input type = "checkbox" id = "Brie" name = "brie" />
+                        <label for = "Brie">Brie</label><br />
+                        <input type = "checkbox" id = "Roquefort" name = "roquefort" />
+                        <label for = "Roquefort">Roquefort</label><br />
+                        <input type = "checkbox" id = "Aged_gouda" name = "aged_gouda" />
+                        <label for = "Aged_gouda">Aged Gouda</label><br />
+                    </fieldset>
+                    <label for = "not-in">Tell us your favorite cheese:</label>
+                    <input type = "text" id = "not-in" name = "not-in" placeholder = "e.g Comté" />
+                    <button type = "submit">Add it to the guide</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright 2026 <a href = https://google.com>The CSE Cheese Society</a>. Cheese responsibly.</p>
+        </footer>
+
+    </body>
+</html>
