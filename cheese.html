@@ -42,11 +42,9 @@
                     <span lang = "it">Gorgonzola</span>, and Stilton lead this family. They are salty, sharp, and
                     divisive.</dd>
                     <dt>Hard</dt>
-                    <dd>Hard cheeses are aged for months or years. <span lang = "it" style = "color:red">Parmigiano-Reggiano</span>,
+                    <dd>Hard cheeses are aged for months or years. <span lang = "it">Parmigiano-Reggiano</span>,
                     aged Gouda, and Comte reward the wait with crystals of crunch and
                     deep, nutty flavor.</dd>
-                    <!--This <span style="color:red"> tag overrides the lang attribute as, during render-time, 
-                        inline styles are highest priority -->
                 </dl>
             </section>
             </article>
@@ -60,7 +58,13 @@
                 </blockquote>
             </section>
             <section>
-                <h2>Try It Yourself</h2>
+                <style>
+                    #my-header{
+                        color:cadetblue
+                    }
+                </style>
+                <h2 id = "my-header">Try It Yourself</h2>
+                <!-- Overrides CSS because this gets declared after the CSS file -->
                 <form>
                     <fieldset>
                         <legend>Which of these have you tasted?</legend>
