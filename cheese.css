@@ -107,6 +107,12 @@ blockquote{
         text-decoration:underline;
     }
 }
+[type = "text"]{
+    font-family: var(--main-font-family);
+    font-style:italic;
+    color:black;
+    background-color:lightyellow;
+}
 
 a:hover
 {
