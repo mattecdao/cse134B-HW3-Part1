@@ -51,21 +51,21 @@ body{
             border-left-style: solid;
             border-left-color: var(--different-color);
         }
-        dt::before{
-            content:"\1F9C0";
-        }
         dd{
             margin:2rem;
         }
     }
 }
 
-article{
-        p{
+dt::before{
+            content:"\1F9C0";
+        }
+
+article > p{
             margin:2rem;
             font-size:1.2rem
         }
-    }
+
 [lang]{
     font-family: var(--main-font-family);
     font-style:bold, italic;
@@ -109,7 +109,7 @@ blockquote{
         text-decoration:underline;
     }
 }
-[type = "text"]{
+input[type="text"]{
     font-family: var(--main-font-family);
     font-style:italic;
     color:black;
