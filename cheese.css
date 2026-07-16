@@ -24,7 +24,7 @@ header{
         border-width: 0.15rem;
         border-style: dotted;
         border-color: var(--different-color);
-        p{
+        header p{
             color:black;
             font-size:1.2rem;
             padding: 0.5rem;
